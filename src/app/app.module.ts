@@ -8,6 +8,8 @@ import { NameChildComponent } from './name-child.component';
 import { NameParentComponent } from './name-parent.component';
 import { VersionChildComponent } from './version-child.component';
 import { VersionParentComponent } from './version-parent..component';
+import { VoteComponent } from './vote.component';
+import { VoteTakerComponent } from './voteTaker.component';
 
 let directives: any[] = [
   AppComponent,
@@ -16,7 +18,9 @@ let directives: any[] = [
   NameChildComponent,
   NameParentComponent,
   VersionParentComponent,
-  VersionChildComponent
+  VersionChildComponent,
+  VoteTakerComponent,
+  VoteComponent
 ];
 
 let schemas: any[] = [];
