@@ -12,7 +12,7 @@ export class NameChildComponent{
   private _name = '';
   
   @Input()
-  set name(name : string){
+  set setName(name : string){
     this._name = (name && name.trim()) || '<no name set>';
   }
   get name():string{
