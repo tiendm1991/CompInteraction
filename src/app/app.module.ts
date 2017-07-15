@@ -6,13 +6,17 @@ import { HeroChildComponent } from './hero-child.component';
 import { HeroParentComponent} from './hero-parent.compenent';
 import { NameChildComponent } from './name-child.component';
 import { NameParentComponent } from './name-parent.component';
+import { VersionChildComponent } from './version-child.component';
+import { VersionParentComponent } from './version-parent..component';
 
 let directives: any[] = [
   AppComponent,
   HeroParentComponent,
   HeroChildComponent,
   NameChildComponent,
-  NameParentComponent
+  NameParentComponent,
+  VersionParentComponent,
+  VersionChildComponent
 ];
 
 let schemas: any[] = [];
