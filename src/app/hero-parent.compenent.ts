@@ -10,7 +10,7 @@ import { HEROES } from './hero';
     <h2>{{master}} controls {{heroes.length}} heroes</h2>
     <hero-child *ngFor="let hero of heroes"
       [hero]="hero"
-      [master]="master">
+      [master_name]="master">
     </hero-child>
   `
 })

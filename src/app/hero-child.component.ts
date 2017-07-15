@@ -11,5 +11,5 @@ import { Hero } from './hero';
   
 export class HeroChildComponent{
   @Input() hero: Hero;
-  @Input('master') masterName : string;
+  @Input('master_name') masterName : string;
 }
