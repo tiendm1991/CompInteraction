@@ -32,7 +32,7 @@ export class CountdownTimerComponent implements OnInit, OnDestroy{  intervalId 
     this.intervalId = window.setInterval(() => {
       this.seconds -= 1;
       if(this.seconds === 0){
-        this.message = 'Stop!';
+        this.message = 'Stop Program!';
       }else{
         if(this.seconds < 0) { 
           this.seconds = 10;

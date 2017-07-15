@@ -2,7 +2,7 @@
  * New typescript file
  */
 import { CountdownTimerComponent } from './countdown-timer.component';
-import { Component } from '@angular/core';
+import { Component, AfterViewInit, ViewChild } from '@angular/core';
 @Component({
   selector: 'countdown-parent-lv',
   template: `
@@ -14,4 +14,10 @@ import { Component } from '@angular/core';
   `
 //  styleUrls: ['demo.css']
 })
-export class CountdownParentComponent { }
+export class CountdownParentComponent implements AfterViewInit{  
+  @ViewChild(CountdownTimerComponent)
+  private countdownTimer : CountdownParentComponent;
+  
+  ngAfterViewInit(): void {    setTimeout(() => this.seconds = () => this.countdownTimer.seconds, 0);  }  start() { this.timerComponent.start(); }
+  stop() { this.timerComponent.stop(); }
+}
