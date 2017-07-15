@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { CountdownParentComponent } from './countdown-parent.component';
+import { CountdownTimerComponent } from './countdown-timer.component';
 import { HeroChildComponent } from './hero-child.component';
 import { HeroParentComponent} from './hero-parent.compenent';
 import { NameChildComponent } from './name-child.component';
@@ -20,7 +22,9 @@ let directives: any[] = [
   VersionParentComponent,
   VersionChildComponent,
   VoteTakerComponent,
-  VoteComponent
+  VoteComponent,
+  CountdownParentComponent,
+  CountdownTimerComponent
 ];
 
 let schemas: any[] = [];
