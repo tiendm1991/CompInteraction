@@ -5,7 +5,8 @@ import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'name-child',
-  template: '<h3>"{{name}}"</h3>'
+  template: '<h3>"{{name}}"</h3>',
+  styles : ['h3{color:green}']
 })
 
 export class NameChildComponent{
