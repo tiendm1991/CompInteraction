@@ -16,8 +16,8 @@ import { Component, AfterViewInit, ViewChild } from '@angular/core';
 })
 export class CountdownParentComponent implements AfterViewInit{  
   @ViewChild(CountdownTimerComponent)
-  private countdownTimer : CountdownParentComponent;
-  
-  ngAfterViewInit(): void {    setTimeout(() => this.seconds = () => this.countdownTimer.seconds, 0);  }  start() { this.timerComponent.start(); }
-  stop() { this.timerComponent.stop(); }
+  private countdownTimer : CountdownTimerComponent;
+  seconds() { return 0; }
+  ngAfterViewInit(): void {    setTimeout(() => this.seconds = () => this.countdownTimer.seconds, 0);  }  start() { this.countdownTimer.start(); }
+  stop() { this.countdownTimer.stop(); }
 }
