@@ -1,3 +1,5 @@
+import { AdBannerComponent } from './ad-baner.component';
+import { AdDirective } from './ad.directive';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -6,7 +8,9 @@ import { AstronautComponent } from './astronaut.component';
 import { CountdownParentComponent } from './countdown-parent.component';
 import { CountdownTimerComponent } from './countdown-timer.component';
 import { HeroChildComponent } from './hero-child.component';
+import { HeroJobAdComponent } from './hero-job-ad';
 import { HeroParentComponent} from './hero-parent.compenent';
+import { HeroProfileComponent } from './hero-profile.component';
 import { HighlightDirective } from './highlight.component';
 import { MissionControlComponent } from './missioncontrol.component';
 import { NameChildComponent } from './name-child.component';
@@ -30,7 +34,11 @@ let directives: any[] = [
   CountdownTimerComponent,
   MissionControlComponent,
   AstronautComponent,
-  HighlightDirective
+  HighlightDirective,
+  AdBannerComponent,
+  HeroJobAdComponent,
+  HeroProfileComponent,
+  AdDirective
 ];
 
 let schemas: any[] = [];
