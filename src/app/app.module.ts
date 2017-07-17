@@ -7,6 +7,7 @@ import { CountdownParentComponent } from './countdown-parent.component';
 import { CountdownTimerComponent } from './countdown-timer.component';
 import { HeroChildComponent } from './hero-child.component';
 import { HeroParentComponent} from './hero-parent.compenent';
+import { HighlightDirective } from './highlight.component';
 import { MissionControlComponent } from './missioncontrol.component';
 import { NameChildComponent } from './name-child.component';
 import { NameParentComponent } from './name-parent.component';
@@ -28,7 +29,8 @@ let directives: any[] = [
   CountdownParentComponent,
   CountdownTimerComponent,
   MissionControlComponent,
-  AstronautComponent
+  AstronautComponent,
+  HighlightDirective
 ];
 
 let schemas: any[] = [];
